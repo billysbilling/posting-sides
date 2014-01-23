@@ -1,3 +1,5 @@
+require('ember');
+
 debit = Ember.Object.create({
     value: 'debit',
     isDebit: true,
