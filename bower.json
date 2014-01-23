@@ -1,0 +1,14 @@
+{
+  "name": "billy-posting-sides",
+  "version": "0.0.1",
+  "homepage": "https://github.com/billysbilling/billy-posting-sides",
+  "main": "billy-posting-sides.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
