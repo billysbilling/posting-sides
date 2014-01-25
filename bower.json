@@ -1,8 +1,8 @@
 {
-  "name": "billy-posting-sides",
+  "name": "posting-sides",
   "version": "1.0.0",
-  "homepage": "https://github.com/billysbilling/billy-posting-sides",
-  "main": "billy-posting-sides.js",
+  "homepage": "https://github.com/billysbilling/posting-sides",
+  "main": "posting-sides.js",
   "license": "MIT",
   "ignore": [
     "**/.*",

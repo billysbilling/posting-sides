@@ -1,6 +1,6 @@
 QUnit.module('PostingSide.debit and PostingSide.credit');
 
-var postingSides = require('../billy-posting-sides');
+var postingSides = require('../posting-sides');
 
 test('value', function() {
     strictEqual(postingSides.debit.value, 'debit');
