@@ -7,9 +7,16 @@ test('value', function() {
     strictEqual(postingSides.credit.value, 'credit');
 });
 
-test('toString', function() {
+test('toString (direct call)', function() {
     strictEqual(postingSides.debit.toString(), '<PostingSide.debit>');
     strictEqual(postingSides.credit.toString(), '<PostingSide.credit>');
+
+});
+
+test('toString (via concatenation)', function() {
+    strictEqual(postingSides.debit + '', '<PostingSide.debit>');
+    strictEqual(postingSides.credit + '', '<PostingSide.credit>');
+
 });
 
 test('isDebit and isCredit', function() {

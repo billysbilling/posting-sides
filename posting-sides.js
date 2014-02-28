@@ -3,21 +3,25 @@ require('ember');
 debit = Ember.Object.create({
     value: 'debit',
     isDebit: true,
-    isCredit: false,
-    toString: function() {
-        return '<PostingSide.debit>';
-    }
+    isCredit: false
 });
 credit = Ember.Object.create({
     value: 'credit',
     isDebit: false,
-    isCredit: true,
-    toString: function() {
-        return '<PostingSide.credit>';
-    }
+    isCredit: true
 });
+
+//Set opposites
 debit.opposite = credit;
 credit.opposite = debit;
+
+//Set toString methods (can't be handled by Ember, crashes in older versions of IE)
+debit.toString = function() {
+    return '<PostingSide.debit>';
+};
+credit.toString = function() {
+    return '<PostingSide.credit>';
+};
 
 function resolveSide(side) {
     if (side === debit || side === credit) {
