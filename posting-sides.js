@@ -1,11 +1,12 @@
 require('ember');
 
-debit = Ember.Object.create({
+var debit = Ember.Object.create({
     value: 'debit',
     isDebit: true,
     isCredit: false
 });
-credit = Ember.Object.create({
+
+var credit = Ember.Object.create({
     value: 'credit',
     isDebit: false,
     isCredit: true
